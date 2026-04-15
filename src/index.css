@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Arial Black", "Helvetica Bold", sans-serif;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Georgia", serif;
+
+  --color-tx-red: #D71920;
+  --color-tx-blue: #002868;
+  --color-tx-white: #FFFFFF;
+  --color-tx-cream: #F5F2EA;
+  --color-tx-ink: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-tx-cream text-tx-ink font-sans antialiased border-[4px] md:border-[12px] border-tx-red min-h-screen;
+  }
+}
+
+@layer utilities {
+  .text-shadow-bold {
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+}
